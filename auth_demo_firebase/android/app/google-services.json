@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "450689632092",
+    "project_id": "auth-demo-5fd12",
+    "storage_bucket": "auth-demo-5fd12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450689632092:android:0efb2ecb69a8f957c72399",
+        "android_client_info": {
+          "package_name": "com.example.auth_demo_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450689632092-lgfspqu9bge58tq2hvpua3cmpmqkbf5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4spS-1iRaR6bm03QXDJvw6iTkkPZLGvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450689632092-lgfspqu9bge58tq2hvpua3cmpmqkbf5h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "450689632092-snm3u2hfrkcvsjgnfdt9u7heqpntjt8f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.authDemoFirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
