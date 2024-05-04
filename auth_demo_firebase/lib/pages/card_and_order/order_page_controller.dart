@@ -20,4 +20,22 @@ class OrderPageController extends GetxController {
     }
     return amount;
   }
+
+  incrementDecrementCounter(
+      {required Food food, required int index, required bool isAdd}) {
+    int count = food.numCount;
+
+    if (isAdd) {
+      totalCartCount++;
+      count = (count + 1);
+    } else {
+      totalCartCount--;
+      count = (count != 0) ? (count - 1) : 0;
+    }
+    food.numCount = count;
+    List<Food> tempList = listFood;
+    tempList[index] = food;
+    listFood = tempList;
+    update();
+  }
 }

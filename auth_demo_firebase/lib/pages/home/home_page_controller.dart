@@ -57,7 +57,7 @@ class HomePageContoller extends GetxController {
       await sl.get<APIServices>().getAPICallWithQueryParam(
           ApiConstant.foodListApi, {'c': strCat}).then((value) {
         foodRespModel = foodListFromJson(value.data);
-        foodList.addAll(foodRespModel?.meals ?? []);
+        foodList.value = foodRespModel?.meals ?? [];
         isLoading.value = false;
         update();
       });

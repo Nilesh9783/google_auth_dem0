@@ -217,8 +217,8 @@ class _MyOrderState extends State<MyOrder> {
           IconButton(
               onPressed: () {
                 if (food.numCount != 0) {
-                  // _homePageContoller.incrementDecrementCounter(
-                  //     food: food, index: index, isAdd: false);
+                  orderPageController.incrementDecrementCounter(
+                      food: food, index: index, isAdd: false);
                 }
               },
               icon: const Icon(Icons.remove, color: Colors.white)),
@@ -228,8 +228,8 @@ class _MyOrderState extends State<MyOrder> {
           ),
           IconButton(
               onPressed: () {
-                // _homePageContoller.incrementDecrementCounter(
-                //     food: food, index: index, isAdd: true);
+                orderPageController.incrementDecrementCounter(
+                    food: food, index: index, isAdd: true);
               },
               icon: const Icon(
                 Icons.add,

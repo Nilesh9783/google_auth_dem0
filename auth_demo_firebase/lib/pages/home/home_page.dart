@@ -125,14 +125,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         if (_homePageContoller.isLoading.value) {
           return Center(
             child: Container(
-              height: 52,
-              width: 52,
+              height: 200,
+              width: 200,
               decoration: const BoxDecoration(
-                  color: Colors.black38,
+                  color: Color.fromARGB(255, 195, 236, 204),
                   borderRadius: BorderRadius.all(Radius.circular(8))),
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(50),
               child: const CircularProgressIndicator(
-                color: Colors.blue,
+                color: Colors.green,
               ),
             ),
           );
@@ -301,8 +301,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               child: Image.network(
                 url,
                 fit: BoxFit.cover,
-                width: 74.0, // Width of each image
-                height: 58.0, // Height of each image
+                width: 74.0,
+                height: 58.0,
               ),
             );
           },
@@ -419,11 +419,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
           ),
-          Text(
-            StringConstant.categories,
-            style: const TextStyle(
-                color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w400),
-          ),
+          // Text(
+          //   StringConstant.categories,
+          //   style: const TextStyle(
+          //       color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w400),
+          // ),
           //By uncommenty this code uyou can see all cat list and move tab controller also manage
           // Obx(
           //   () => Container(
