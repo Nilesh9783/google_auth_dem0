@@ -54,6 +54,7 @@ class HomePageContoller extends GetxController {
   Future<void> basedOngetMeals() async {
     try {
       isLoading.value = true;
+      totalCartCount.value = 0;
       await sl.get<APIServices>().getAPICallWithQueryParam(
           ApiConstant.foodListApi, {'c': strCat}).then((value) {
         foodRespModel = foodListFromJson(value.data);
